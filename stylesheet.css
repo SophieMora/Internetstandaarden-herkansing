@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*algemene dingen voor elke pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-color: #f0f0f0;
+}
+
+.main {
+    background-image: url('img/IMG_4634.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #f1fdff;
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+}
+
+/* navigatie */
+
+nav {
+    display: flex; /* Gebruik flexbox om de elementen uit te lijnen */
+    justify-content: space-between; /* Verdeel de beschikbare ruimte tussen elementen */
+    align-items: center; /* Centreer de elementen verticaal */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 3em;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #333;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav a {
+    position: relative; /* Positie instellen voor pseudo-elementen */
+    padding-bottom: 3px; /* Ruimte onder de tekst voor het lijntje */
+    transition: color 0.3s; /* Overgangseffect voor de tekstkleur */
+}
+
+/* Lijntje verschijnt bij hover */
+nav a:hover {
+    color: #007bff; /* Tekstkleur bij hover */
+}
+
+/* Lijntje onder de actieve pagina */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Hoogte van het lijntje */
+    background-color: #007bff; /* Kleur van het lijntje */
+}
+
+.hoofdpagina {
+    padding-top: 7em;
+    text-align: center;
+    color: #fff;
+}
+
+.hoofdpagina h1 {
+    font-size: 48px;
+}
+
+.hoofdpagina p {
+    font-size: 18px;
+    margin-bottom: 4em;
+}
+
+.hoofdpagina a {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hoofdpagina a:hover {
+    background-color: #555;
+}
+
+/* Gallerij pagina*/
+
+.gallerij-h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+.gallerij { 
+        width: 90%;
+        margin:0 auto;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content:space-between;
+        padding-top: 2em;
+    }
+
+.gallerij img {
+    width: 40em;
+    height: 40em;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+
+.gallerij img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* Plekken pagina */
+
+.locaties article {
+    list-style: none;
+    padding-right: 20em;
+    padding-left: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.locaties article {
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+.locaties article h2 {
+    font-size: 1.25em;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.locaties article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.locaties article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-radius: 50%; /* Voegt ronde hoeken toe aan de afbeelding */
+    transition: border-radius 0.3s; /* Voegt een overgangseffect toe aan de ronde hoeken */
+}
+
+.locaties article img:hover {
+    border-radius: 0%; /* Verwijdert de ronde hoeken bij hover */
+}
+
+/* Over mij pagina */
+main h1 {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+main article {
+    display: flex;
+}
+
+/* Stijlen voor de afbeelding binnen het <article> element */
+
+main article img {
+    max-width: 30%;
+    margin-right: 2em;
+}
+
+main article p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Plaats de paragraaftekst aan de linkerkant */
+}
+
+/* Centreren van de artikelen en toevoegen van witruimte */
+main {
+    display: flex;
+    flex-direction: column; /* Plaats artikelen onder elkaar */
+    align-items: left; /* Horizontaal centreren van de artikelen */
+    text-align: center; /* Tekst centreren in de artikelen */
+    padding-right: 10em;
+    padding-left: 10em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6em;
+    background-color: #f0f0f0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
