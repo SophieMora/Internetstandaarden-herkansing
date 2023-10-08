@@ -27,6 +27,7 @@ header {
     position: relative;
 }
 
+
 /* navigatie */
 
 nav {
@@ -187,6 +188,7 @@ main h1 {
 
 main article {
     display: flex;
+    align-items: start;
 }
 
 /* Stijlen voor de afbeelding binnen het <article> element */
@@ -206,7 +208,6 @@ main article p {
 main {
     display: flex;
     flex-direction: column; /* Plaats artikelen onder elkaar */
-    align-items: left; /* Horizontaal centreren van de artikelen */
     text-align: center; /* Tekst centreren in de artikelen */
     padding-right: 10em;
     padding-left: 10em;
